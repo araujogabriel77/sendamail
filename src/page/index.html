@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mail Sender</title>
+</head>
+
+<body>
+    <h1>Send a mail 💌 </h1>
+
+    <form action="/form" method="POST" id="form">
+        <label for="email">Target email</label>
+        <input type="email" id="email" name="email" required="required">
+        <span id="span-email">Please, inform a valid email</span>
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required="required">
+        <span id="span-subject">Subject cannot be empty.</span>
+        <label for="message">Your message</label>
+        <textarea name="text" id="message" cols="50" rows="10" required="required"></textarea>
+        <span id="span-message">Message cannot be empty.</span>
+        <label for="button"></label>
+        <input type="submit" value="Send" id="button">
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
